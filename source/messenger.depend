@@ -1,0 +1,140 @@
+# depslib dependency file v1.0
+1466339802 source:c:\users\wang ching-tien\desktop\40243118s\source\block.cpp
+	"Block.h"
+
+1466339772 c:\users\wang ching-tien\desktop\40243118s\source\block.h
+	"Tool.h"
+	"Climate.h"
+
+1466340630 c:\users\wang ching-tien\desktop\40243118s\source\tool.h
+	<windows.h>
+	<conio.h>
+	"ctype.h"
+	<stdio.h>
+
+1466339162 c:\users\wang ching-tien\desktop\40243118s\source\climate.h
+
+1466325744 source:c:\users\wang ching-tien\desktop\40243118s\source\building.cpp
+	"Building.h"
+
+1466325740 c:\users\wang ching-tien\desktop\40243118s\source\building.h
+	"Country.h"
+	"Tool.h"
+	"Position.h"
+
+1466333425 c:\users\wang ching-tien\desktop\40243118s\source\country.h
+
+1466316308 c:\users\wang ching-tien\desktop\40243118s\source\position.h
+
+1482455840 source:c:\users\wang ching-tien\desktop\40243118s\source\city.cpp
+	"City.h"
+	"Building.h"
+
+1466342586 c:\users\wang ching-tien\desktop\40243118s\source\city.h
+	"Building.h"
+	"Ground.h"
+	<list>
+	"Creature.h"
+
+1466339162 c:\users\wang ching-tien\desktop\40243118s\source\ground.h
+	"Position.h"
+	<stdlib.h>
+	"Tool.h"
+
+1466343390 c:\users\wang ching-tien\desktop\40243118s\source\creature.h
+	"Position.h"
+	"Country.h"
+	"Block.h"
+	"Building.h"
+
+1466338566 source:c:\users\wang ching-tien\desktop\40243118s\source\climate.cpp
+	"Climate.h"
+	"Tool.h"
+
+1466330546 source:c:\users\wang ching-tien\desktop\40243118s\source\counrty.cpp
+	"Country.h"
+	"stdlib.h"
+	"string.h"
+
+1482455584 source:c:\users\wang ching-tien\desktop\40243118s\source\creature.cpp
+	"Creature.h"
+	"Tool.h"
+	"stdio.h"
+	"stdlib.h"
+	"Block.h"
+
+1466341760 source:c:\users\wang ching-tien\desktop\40243118s\source\creaturebase.cpp
+	"CreatureBase.h"
+	"stdio.h"
+
+1466342671 c:\users\wang ching-tien\desktop\40243118s\source\creaturebase.h
+	<list>
+	"Creature.h"
+	"Ground.h"
+	<stdio.h>
+	"Block.h"
+	"City.h"
+	"Map.h"
+
+1466343734 c:\users\wang ching-tien\desktop\40243118s\source\map.h
+	"Ground.h"
+	"Block.h"
+	<stdio.h>
+	"Creature.h"
+	"Player.h"
+
+1466339400 c:\users\wang ching-tien\desktop\40243118s\source\player.h
+	"Position.h"
+	"Climate.h"
+
+1466339162 source:c:\users\wang ching-tien\desktop\40243118s\source\gameinfo.cpp
+	"GameInfo.h"
+	"string.h"
+	"stdio.h"
+	"Data.h"
+
+1466339162 c:\users\wang ching-tien\desktop\40243118s\source\gameinfo.h
+	"Tool.h"
+	"Data.h"
+	"Player.h"
+
+1466326430 c:\users\wang ching-tien\desktop\40243118s\source\data.h
+	"CreatureBase.h"
+	"City.h"
+	"Map.h"
+
+1466162142 source:c:\users\wang ching-tien\desktop\40243118s\source\ground.cpp
+	"Ground.h"
+	<stdlib.h>
+	"Tool.h"
+
+1466343894 source:c:\users\wang ching-tien\desktop\40243118s\source\map.cpp
+	"Map.h"
+	<stdio.h>
+	"typeinfo"
+
+1466338787 source:c:\users\wang ching-tien\desktop\40243118s\source\player.cpp
+	"Player.h"
+	"Tool.h"
+
+1466316308 source:c:\users\wang ching-tien\desktop\40243118s\source\position.cpp
+	"Position.h"
+
+1466345240 source:c:\users\wang ching-tien\desktop\40243118s\source\tool.cpp
+	"Tool.h"
+	<stdio.h>
+
+1482456620 source:c:\users\wang ching-tien\desktop\40243118s\source\sandbox.cpp
+	"Creature.h"
+	<stdio.h>
+	"time.h"
+	<stdlib.h>
+	"CreatureBase.h"
+	<stdlib.h>
+	"Map.h"
+	"Building.h"
+	"City.h"
+	"Data.h"
+	"GameInfo.h"
+	"Climate.h"
+
