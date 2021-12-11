@@ -13,9 +13,11 @@ This is the game in which the player would lead its follower and compete with ot
 ## Contribute:
 Please see the [contribution guidline](https://github.com/grassking100/messenger/blob/master/CONTRIBUTING.md).
 
-
 ## License:
 The project is distributesd under the Apache License, Version 2.0, see [LICENSE](https://github.com/grassking100/messenger/blob/master/LICENSE) for more information.
+
+## How could I contact the maintainer?
+You could use the tag mechanism to tag me like @grassking100. I would respond to you in about one to two weeks. Please expect a delayed response to all messages. Your patience is very much appreciated!
 
 ------
    Copyright 2021 Ching-Tien Wang
