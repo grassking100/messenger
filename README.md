@@ -3,7 +3,7 @@
 
 This is the game in which the player would lead its follower and compete with other groups. The last surviving group would win the game. 
 
-![demo](https://github.com/grassking100/messenger/blob/master/pic.jpg?raw=true)
+![demo](https://github.com/grassking100/messenger/blob/master/resource/pic.jpg?raw=true)
 
 ## Features:
 1. Every creature has its own genes, which would affect its behavior and property. The genes would pass down to its offspring by some mutation. Natural selection and player selection would direct its path of evolution.
