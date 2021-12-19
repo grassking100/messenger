@@ -1,8 +1,8 @@
 #ifndef MAP_H_INCLUDED
 #define MAP_H_INCLUDED
+#include <stdio.h>
 #include "Ground.h"
 #include "Block.h"
-#include <stdio.h>
 #include "Creature.h"
 #include "Player.h"
 const int HeightMax=100;

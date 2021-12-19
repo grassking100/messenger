@@ -28,8 +28,5 @@ struct Player
 
 };
 
-/*
-void playerChangeMap(Ground g,Player* player,char input);
-void playerChangeClimate(Climate* cl,char input);
-*/
+
 #endif // PLAYER_H_INCLUDED

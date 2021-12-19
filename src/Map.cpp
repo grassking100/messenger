@@ -102,7 +102,7 @@ void Map::print(const Ground<Creature*> *g,const Ground<Building*> *b,const Play
             Position p(i,j);
               int textC=BLACK;
             int groundC=BLACK;
-            char type;
+            char type = ' ';
             if(m->validate(p))
             {
                 if(player->pos.row==i && player->pos.col==j)

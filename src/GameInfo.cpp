@@ -100,8 +100,6 @@ void Panel::setInfos(const CountryInfo* _info,const Player* player,const Climate
     info.setClimateInfo(climate);
     setInfo(1,0,&info);
 
-
-
     info.setLegendInfo();
     setInfo(2,0,&info);
     info.setClimateInfo();
@@ -114,46 +112,34 @@ void setPanel(Panel *panel,int row,int col,const Data* data)
     panel->col=col;
     panel->row=row;
     GameInfo environment;
-    // showData(data,&environment);
     panel->panel[0][0]=environment;
 
     GameInfo infoH;
     infoH.backC=PINK;
-//    showCountry(data,&infoH,Harmony);
     panel->panel[0][1]=infoH;
 
     GameInfo infoC;
     infoC.backC=RED;
-//    showCountry(data,&infoC,Catastrophe);
     panel->panel[0][2]=infoC;
 
     GameInfo infoL;
     infoC.backC=WHITE;
     infoC.textC=BLACK;
-    //setLegendInfo(&infoL);
     panel->panel[1][0]=infoL;
-
-
 
     GameInfo infoR;
     infoR.backC=PURPLE;
-    //showCountry(data,&infoC,Catastrophe);
-//    showCountry(data,&infoR,River);
     panel->panel[1][1]=infoR;
 
     GameInfo infoA;
     infoA.backC=YELLOW;
     infoA.textC=BLACK;
-//    showCountry(data,&infoA,Atheism);
     panel->panel[1][2]=infoA;
 
     GameInfo infoG;
-//    setClimateInfo(&infoG);
     panel->panel[2][1]=infoG;
 
-
     GameInfo infoAc;
-//    setActionInfo(&infoAc);
     panel->panel[2][0]=infoAc;
 
 
@@ -169,24 +155,6 @@ void Panel::showPanel()
     }
 }
 
-
-/*
-void showData(const Data *data,GameInfo *info)
-{
-    int size=0;
-    int temp;
-    setPlayerInfo(&data->player,info->info,&temp);
-    size+=temp;
-    setClimateInfo(&data->climate,info->info+size,&temp);
-    size+=temp;
-}*/
-/*
-
-void showCountry(const Data *data,GameInfo *info,CountryType type)
-{
-    int size=0;
-    setCountryInfo(&data->cd,type,info->info,& size);
-}*/
 void GameInfo::setPlayerInfo(const Player* player)
 {
     char temp[30];
@@ -211,23 +179,6 @@ void GameInfo::setPlayerInfo(const Player* player)
     strcpy(info[7],"");
 }
 
-/*void setClimateInfo(const Climate* climate,char info[][30],int* size)
-{
-    char temp[30];
-    strcpy(info[0],"Climate info");
-
-    sprintf(temp,"  Humidity:%5d",climate->humidity);
-    strcpy(info[1],temp);
-
-    sprintf(temp,"  Temperature:%5d",climate->temperature);
-    strcpy(info[2],temp);
-
-    sprintf(temp,"  Sea Level:%5d",climate->seaLevel);
-    strcpy(info[3],temp);
-    *size=4;
-}*/
-
-
 void GameInfo::printInfo(int row,int col)
 {
     for(int i=0; i<rowSize; i++)
@@ -249,36 +200,37 @@ void  GameInfo::cleanInfo(int row,int col)
 void GameInfo::setLegendInfo()
 {
     strcpy(info[0],"Map Legend");
-    strcpy(info[1],"@  為寺廟");
-    strcpy(info[2],"v  為草地");
-    strcpy(info[3],"~  為海洋(藍色的)");
-    strcpy(info[4],"x  為雪地");
-    strcpy(info[5],"P  為族群");
-    strcpy(info[6],"Y  為玩家");
-    strcpy(info[7],"~  為岩漿(紅色的)");
+    strcpy(info[1],"@       Temple");
+    strcpy(info[2],"v        Grass");
+    strcpy(info[3],"~(blue)  River");
+    strcpy(info[4],"x         Snow");
+    strcpy(info[5],"P     Creature");
+    strcpy(info[6],"Y       Player");
+    strcpy(info[7],"~(red)    Lava");
 }
 
 void GameInfo::setActionInfo()
 {
     strcpy(info[0],"Control key");
-    strcpy(info[1],"w(W) 向上走");
-    strcpy(info[2],"a(A) 向左走");
-    strcpy(info[3],"s(S) 向下走");
-    strcpy(info[4],"d(D) 向右走");
-    strcpy(info[5],"p(P) 來暫停");
-    strcpy(info[6],"h(H) 顯示help");
+    strcpy(info[1],"Walk up: w(W)");
+    strcpy(info[2],"Walk left: a(A)");
+    strcpy(info[3],"Walk down: s(S)");
+    strcpy(info[4],"Walk right: d(D)");
+    strcpy(info[5],"Pause: p(P)");
+    strcpy(info[6],"Help: h(H)");
+    strcpy(info[7],"");
+    strcpy(info[8],"");
 }
 
 void GameInfo::setClimateInfo()
 {
-    strcpy(info[0],"Climate Ground key");
-    strcpy(info[1],"o(O) 降低周圍地型的高度");
-    strcpy(info[2],"i(I) 提升周圍地型的高度");
-    strcpy(info[3], "k(K) 降低濕度");
-    strcpy(info[4], "j(J) 提升濕度");
-    strcpy(info[5], "k(K) 降低濕度");
-    strcpy(info[6], "n(N) 降低溫度");
-    strcpy(info[7], "m(M) 提升溫度");
-    strcpy(info[8], "2 降低海平面");
-    strcpy(info[9], "8 提升海平面");
+    strcpy(info[0], "Climate Ground key");
+    strcpy(info[1], "Decrease height: o(O)");
+    strcpy(info[2], "Increase height: i(I)");
+    strcpy(info[3], "Decrease humidity: k(K)");
+    strcpy(info[4], "Increase humidity: j(J)");
+    strcpy(info[5], "Decrease temperature: n(N)");
+    strcpy(info[6], "Increase temperature: m(M)");
+    strcpy(info[7], "Decrease sea level: 2");
+    strcpy(info[8], "Increase sea level: 8");
 }

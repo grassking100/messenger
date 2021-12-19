@@ -1,7 +1,7 @@
 #ifndef GROUND_H_INCLUDED
 #define GROUND_H_INCLUDED
-#include "Position.h"
 #include <stdlib.h>
+#include "Position.h"
 #include "Tool.h"
 template <class T>
 class Ground
@@ -37,7 +37,7 @@ public:
         int cS=ColSize();
         return checkValue(pos.row,0,rS-1) && checkValue(pos.col,0,cS-1);
     };
-    Ground(int row,int col,auto initial);
+    Ground(int row,int col,T initial);
     T*getObj(Position pos)
     {
         if(validate(pos))
@@ -96,8 +96,6 @@ public:
         return checkValue(pos.col-1,0,rowSize-1);
     };
     void setPosition(Position *pos,Position change);
-
-
 };
 
 template <class T>
@@ -107,7 +105,7 @@ void Ground<T>::setPosition(Position *pos,Position change)
     setValue(&pos->col,change.col,0,ColSize()-1,Force);
 }
 template <class T>
-Ground<T>::Ground(int row,int col,auto initial)
+Ground<T>::Ground(int row,int col,T initial)
 {
     T** bp=(T**)malloc(sizeof(T*)*row);
     if(bp!=0)

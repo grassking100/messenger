@@ -14,8 +14,8 @@
 int main()
 {
     int iter=0;
-    FILE* number=fopen("number.csv","w");
-    fprintf(number,"iter,h,r,c,a\n");
+    //FILE* number=fopen("number.csv","w");
+    //fprintf(number,"iter,h,r,c,a\n");
     Start:
     char input=' ';
     Climate climate;
@@ -24,8 +24,7 @@ int main()
     int windowRow=30;
     const int x=150,y=150;
     Player player(x,y);
-   // srand(0);
-   srand(time(0));
+    srand(time(0));
     showIntroduction();
     int mode=showMode()-'1';
     player.type=NumToCountryType(mode);
@@ -91,11 +90,10 @@ int main()
             }
 
         }
-
-        fprintf(number,"%d,%d,%d,%d,%d\n",iter,cf[Harmony].getCount(),cf[River].getCount(),cf[Catastrophe].getCount(),cf[Atheism].getCount());
+        //fprintf(number,"%d,%d,%d,%d,%d\n",iter,cf[Harmony].getCount(),cf[River].getCount(),cf[Catastrophe].getCount(),cf[Atheism].getCount());
         iter++;
     }
-    fclose(number);
+    //fclose(number);
     system("cls");
     SetTextAndBackgroundColor(WHITE,BLACK);
     if(checkInput(input,'t'))

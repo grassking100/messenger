@@ -1,5 +1,7 @@
 #include "City.h"
 #include "Building.h"
+#include "Ground.h"
+
 void  City::Batchmagic( Ground<Creature*> * c)
 {
     for (std::list<Building>::iterator it=building.begin(); it!=building.end(); ++it)
@@ -8,6 +10,7 @@ void  City::Batchmagic( Ground<Creature*> * c)
         magic(bp,c);
     }
 }
+
 void City::magic(Building *b,Ground<Creature*> * c)
 {
     for(int i=-2; i<=2; i++)
@@ -55,7 +58,7 @@ void City::magic(Building *b,Ground<Creature*> * c)
 City::City(int row,int col)
 {
     Building*cp=0;
-    g=new Ground<Building*>(row,col,cp);
+    g = new Ground<Building*>(row,col,cp);
 }
 City::~City()
 {
